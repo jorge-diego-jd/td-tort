@@ -1,56 +1,80 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f6f8fa;
     margin: 0;
     padding: 0;
+    color: #24292f;
 }
 
+/* Header Style */
 h1 {
     text-align: center;
-    color: #333;
-    margin-top: 30px;
+    color: #0366d6;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 /* Form Styles */
 form {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e4e8;
 }
 
+/* Label Styles */
 label {
-    font-size: 16px;
-    color: #333;
     display: block;
-    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #24292f;
 }
 
+/* Input Field Styles */
 input[type="text"],
 input[type="email"] {
     width: 100%;
     padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     margin-bottom: 15px;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #24292f;
+    background-color: #fafbfc;
     box-sizing: border-box;
 }
 
+/* Button Style */
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
+/* Button Hover Effect */
 button:hover {
-    background-color: #45a049;
+    background-color: #218838;
+}
+
+/* Focused Input Styles */
+input:focus {
+    border-color: #0366d6;
+    outline: none;
+}
+
+input:focus, button:focus {
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.4);
 }

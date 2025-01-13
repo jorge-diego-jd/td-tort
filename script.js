@@ -12,7 +12,7 @@ document.getElementById('leadForm').addEventListener('submit', function(event) {
         traffic_source_id: '564001' // Added actual traffic source ID
     };
 
-    fetch('https://masstort.allcoveragemedia.com/tort-td/proxy.php', {
+    fetch('https://masstort.allcoveragemedia.com/td-tort/proxy.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

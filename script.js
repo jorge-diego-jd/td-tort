@@ -14,7 +14,7 @@ document.getElementById('leadForm').addEventListener('submit', function(event) {
     };
 
     // Send data to your PHP proxy
-    fetch('https://masstort.allcoveragemedia.com/api/proxy.php', {
+    fetch('https://masstort.allcoveragemedia.com/proxy.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

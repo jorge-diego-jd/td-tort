@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD-Tort Lead Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+        form {
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+        input, button {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+        }
+        .message {
+            margin-top: 1em;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #e0ffe0;
+            border: 1px solid #00cc00;
+        }
+        .error {
+            background-color: #ffe0e0;
+            border: 1px solid #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    <form id="leadForm">
+        <label for="caller_id">Caller Number (e.g., +17194451111):</label>
+        <input type="text" id="caller_id" name="caller_id" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required>
+
+        <label for="sub_id">Sub ID:</label>
+        <input type="text" id="sub_id" name="sub_id">
+
+        <label for="trusted_form_cert_url">Trusted Form URL from Website:</label>
+        <input type="url" id="trusted_form_cert_url" name="trusted_form_cert_url">
+
+        <label for="trusted_form_cert">Trusted Form Cert:</label>
+        <input type="text" id="trusted_form_cert" name="trusted_form_cert">
+
+        <label for="s1">Sub ID 1:</label>
+        <input type="text" id="s1" name="s1">
+
+        <label for="s2">Sub ID 2:</label>
+        <input type="text" id="s2" name="s2">
+
+        <label for="s3">Sub ID 3:</label>
+        <input type="text" id="s3" name="s3">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="responseMessage" class="message" style="display: none;"></div>
+
+    <script src="client.js"></script>
+</body>
+</html>
